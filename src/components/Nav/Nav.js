@@ -4,7 +4,7 @@ import styles from './Nav.module.css';
 
 const Nav = () => {
   return (
-    <nav className={`navbar ${styles["navbar"]}`} role="navigation" aria-label="main navigation">
+    <nav className={`container navbar ${styles["navbar"]}`} role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="..">
           <img src={logo} alt="logo" width="112" height="28" />

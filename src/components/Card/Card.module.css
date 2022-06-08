@@ -1,0 +1,31 @@
+.card-bc{
+    background-color: #F27F3D;
+    color:white;
+    text-align: center;
+}
+
+.titulo{
+    font-family: 'RickandMorty';
+    color:#9ABF4B;
+    text-align: center;
+}
+
+.contenido{
+    text-align: left;
+}
+
+.ul{
+    list-style: none !important;
+}
+
+.btn2{
+    background-color: #0AA689;
+    border-color: #9ABF4B;
+    font-family: 'RickandMorty';
+    color:white;
+}
+
+.btn2:hover{
+    border-color:#0AA689;
+    color:aliceblue;
+}
