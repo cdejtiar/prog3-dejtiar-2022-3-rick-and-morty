@@ -1,0 +1,19 @@
+.navbar{
+    background-color: unset;
+    justify-content: space-between;
+    padding:1em 0em;
+}
+
+.navbar-menu{
+    flex-grow: 0;
+}
+
+.navbar-item:not(.is-arrowless)::after{
+    border-color: #4a4a4a;
+}
+
+.navbar-item:focus, .navbar-item:focus-within, .navbar-item:hover, .navbar-item:active{
+    background-color: #0AA689 !important;
+    color:white !important;
+    border-radius: 1em;
+}

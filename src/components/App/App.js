@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import "bulma/css/bulma.css";
 import Card from "../Card/Card";
 import Nav from '../Nav/Nav';
+import Hero from '../Hero/Hero';
 import axios from "axios";
 
 const App = () => {
@@ -29,8 +30,8 @@ const App = () => {
   }, [getData]);
 
   return (
-    <div className={styles['App']}>
-      <Nav />
+    <div className={`${styles['App']}`}>
+      <Hero />
       {loading ? (
         <p>Cargando...</p>
       ) : (

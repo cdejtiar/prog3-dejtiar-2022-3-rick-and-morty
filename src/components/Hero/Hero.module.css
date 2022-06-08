@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'RickandMorty';
+    src: url("../../assets/get_schwifty.ttf");
+  }
+
+.image{
+    width:100%;
+    height: 100vh;
+}
+
+.logo{
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    margin:auto;
+    width:70%;
+}
+
+.subtitle{
+    padding-top:0.5em;
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    text-align: center;
+    color:white;
+    font-size: 3em;
+    font-family: 'RickandMorty';
+}
+
+.cta{
+    position:absolute;
+    top:50%;
+    left:43%;
+    background-color: #0AA689;
+    border-color: #9ABF4B;
+    font-family: 'RickandMorty';
+    font-size: 1.5em;
+    color:white;
+}
+
+.cta:hover{
+    border-color:#0AA689;
+    color:aliceblue;
+}
