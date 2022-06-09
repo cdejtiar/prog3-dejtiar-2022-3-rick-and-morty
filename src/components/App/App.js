@@ -10,8 +10,14 @@ const App = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
   const [showPopUp, setShowPopUp] = useState(false);
+  const [selectedCharacter, setSelectedCharacter] = useState({});
 
-  const handleShowPopUp = show => setShowPopUp(show);
+  const handleShowPopUp = (character = false) => {
+    setSelectedCharacter(character);
+    setShowPopUp(character ? true : false);
+  };
+
+
 
   const getData = useCallback(async (from, to) => {
     try {
@@ -49,7 +55,7 @@ const App = () => {
           </div>
         </div>
       )}
-      <PopUp display={showPopUp} handleShowPopUp={handleShowPopUp}/>
+      <PopUp display={showPopUp} handleShowPopUp={handleShowPopUp} character={selectedCharacter}/> 
     </div>
   );
 };

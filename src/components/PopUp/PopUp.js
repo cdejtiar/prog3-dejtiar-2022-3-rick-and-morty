@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./PopUp.module.css";
 
-const PopUp = ({ display, handleShowPopUp }) => {
+const PopUp = ({ display, handleShowPopUp, character }) => {
   return (
     <div
       className={`${styles["pop_up_wrapper"]} ${
@@ -9,7 +9,8 @@ const PopUp = ({ display, handleShowPopUp }) => {
       }`}
     >
       <h2 className={styles["titulo"]}>Episodios en los que aparece</h2>
-      <button className={`button is-rounded ${styles["btn3"]}`} onClick={() => handleShowPopUp(false)}>Cerrar</button>
+      <h3>{character.name}</h3>
+      <button className={`button is-rounded ${styles["btn3"]}`} onClick={() => handleShowPopUp()}>Cerrar</button>
     </div>
   );
 };

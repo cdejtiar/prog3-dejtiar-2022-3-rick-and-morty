@@ -1,7 +1,8 @@
 import React from "react";
 import styles from './Card.module.css';
 
-const Card = ({character:{ name, image, status, species, origin, episodes}, handleShowPopUp }) => {
+const Card = ({character, handleShowPopUp }) => {
+  const { name, image, status, species, origin, episodes } = character;
   return (
     <div className="column is-one-quarter">
       <div className="card">
@@ -28,7 +29,7 @@ const Card = ({character:{ name, image, status, species, origin, episodes}, hand
               </ul>
           </div>
 
-          <button className={`button is-rounded ${styles["btn2"]}`} onClick={() => handleShowPopUp(true)}>Episodes</button>
+          <button className={`button is-rounded ${styles["btn2"]}`} onClick={() => handleShowPopUp(character)}>Episodes</button>
         </div>
       </div>
     </div>
