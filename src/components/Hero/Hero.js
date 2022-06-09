@@ -10,7 +10,6 @@ const Hero = () => {
       <img className={styles["image"]} src={backgroundImage} alt="Hero" />
       <img className={styles["logo"]} src={logo} alt="logo" />
       <h2 className={styles["subtitle"]}>The Wiki App</h2>
-      <button className={`button is-rounded ${styles["cta"]}`}>See more</button>
       <Nav />
     </div>
   );
