@@ -1,13 +1,13 @@
 import React from "react";
-import logo from "../../assets/Rick-and-Morty.png";
+import logo from "../../assets/rick-and-morty-flip-off-sticker.png";
 import styles from './Nav.module.css';
 
 const Nav = () => {
   return (
     <nav className={`container navbar ${styles["navbar"]}`} role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="..">
-          <img src={logo} alt="logo" width="112" height="28" />
+        <a className={` navbar-item ${styles["navbar-img"]}`} href="..">
+          <img src={logo} alt="logo" width="100" height="100" />
         </a>
 
         <a
