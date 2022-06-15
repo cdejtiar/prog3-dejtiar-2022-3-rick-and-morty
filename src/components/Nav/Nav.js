@@ -7,11 +7,11 @@ const Nav = () => {
     <nav className={`container navbar ${styles["navbar"]}`} role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className={` navbar-item ${styles["navbar-img"]}`} href="..">
-          <img src={logo} alt="logo" width="100" height="100" />
+          <img src={logo} alt="logo" width="60" height="60" />
         </a>
 
         <a
-          href="https://www.fff.com"
+          href="."
           role="button"
           className="navbar-burger"
           aria-label="menu"

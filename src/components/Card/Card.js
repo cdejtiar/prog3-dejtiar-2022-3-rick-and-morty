@@ -1,17 +1,14 @@
 import React from "react";
-import styles from './Card.module.css';
+import styles from "./Card.module.css";
 
-const Card = ({character, handleShowPopUp }) => {
-  const { name, image, status, species, origin, episodes } = character;
+const Card = ({ character }) => {
+  const { name, image, status, species, origin, location } = character;
   return (
     <div className="column is-one-quarter">
       <div className="card">
         <div className="card-image">
           <figure className="image is-4by3">
-            <img
-              src={image}
-              alt="Placeholder"
-            />
+            <img src={image} alt="Placeholder" />
           </figure>
         </div>
         <div className={`card-content ${styles["card-bc"]}`}>
@@ -23,13 +20,20 @@ const Card = ({character, handleShowPopUp }) => {
 
           <div className={`content ${styles["contenido"]}`}>
             <ul className={styles["ul"]}>
-              <li>Status: {status}</li>
-              <li>Species: {species}</li>
-              <li>Origin: {origin.name}</li>
-              </ul>
+              <li>
+                <i className={`fa-solid fa-circle`}></i>Status: {status}
+              </li>
+              <li>
+              <i className="fa-solid fa-user"></i>Species: {species}
+              </li>
+              <li>
+                <i className="fa-solid fa-globe"></i>Origin: {origin.name}
+              </li>
+              <li>
+                <i className="fa-solid fa-location-dot"></i>Location: {location.name}
+              </li>
+            </ul>
           </div>
-
-          <button className={`button is-rounded ${styles["btn2"]}`} onClick={() => handleShowPopUp(character)}>Episodes</button>
         </div>
       </div>
     </div>

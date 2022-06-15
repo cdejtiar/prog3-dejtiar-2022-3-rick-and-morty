@@ -1,5 +1,5 @@
 .card-bc{
-    background-color: #F27F3D;
+    background-color: black;
     color:white;
     text-align: center;
 }
@@ -16,6 +16,7 @@
 
 .ul{
     list-style: none !important;
+    margin-left: 0em !important;
 }
 
 .btn2{
@@ -28,4 +29,12 @@
 .btn2:hover{
     border-color:#0AA689;
     color:aliceblue;
+}
+
+.alive{
+    color:green;
+}
+
+i{
+    margin-right: .5em;
 }

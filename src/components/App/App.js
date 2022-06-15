@@ -3,19 +3,18 @@ import styles from "./App.module.css";
 import "bulma/css/bulma.css";
 import Card from "../Card/Card";
 import Hero from "../Hero/Hero";
-import PopUp from "../PopUp/PopUp";
 import axios from "axios";
 
 const App = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [showPopUp, setShowPopUp] = useState(false);
+  /*const [showPopUp, setShowPopUp] = useState(false);
   const [selectedCharacter, setSelectedCharacter] = useState({});
 
   const handleShowPopUp = (character = false) => {
     setSelectedCharacter(character);
     setShowPopUp(character ? true : false);
-  };
+  };*/
 
 
 
@@ -48,14 +47,13 @@ const App = () => {
         <p>Cargando...</p>
       ) : (
         <div className="container">
-          <div className="columns is-desktop is-multiline">
+          <div className="columns is-multiline">
             {data.map((character) => (
-              <Card character={character} handleShowPopUp={handleShowPopUp} />
+              <Card key={character.data} character={character} />
             ))}
           </div>
         </div>
-      )}
-      <PopUp display={showPopUp} handleShowPopUp={handleShowPopUp} character={selectedCharacter}/> 
+      )} 
     </div>
   );
 };
