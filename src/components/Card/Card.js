@@ -21,7 +21,8 @@ const Card = ({ character }) => {
           <div className={`content ${styles["contenido"]}`}>
             <ul className={styles["ul"]}>
               <li>
-                <i className={`fa-solid fa-circle`}></i>Status: {status}
+                {/* <i {status === 'Alive' ? `className="fa-solid fa-circle ${styles["alive"]}"` : `className="fa-solid fa-circle ${styles["dead"]}"`}></i>Status: {status} */}
+                <i className={`fa-solid fa-circle ${status === 'Alive' ? styles["alive"] : styles["dead"]}`}></i>Status: {status}
               </li>
               <li>
               <i className="fa-solid fa-user"></i>Species: {species}

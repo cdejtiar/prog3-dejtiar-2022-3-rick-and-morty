@@ -35,6 +35,10 @@
     color:green;
 }
 
+.dead{
+    color:red;
+}
+
 i{
     margin-right: .5em;
 }
