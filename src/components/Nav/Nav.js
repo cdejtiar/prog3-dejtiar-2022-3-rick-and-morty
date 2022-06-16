@@ -30,8 +30,8 @@ const Nav = () => {
             Watch on Netflix
           </a>
 
-          <a href="https://www.fff.com" className={`navbar-item ${styles["navbar-item"]}`}>
-            Contact
+          <a href="https://rickandmortyapi.com/" className={`navbar-item ${styles["navbar-item"]}`}>
+            View API
           </a>
 
           <div className={`navbar-item ${styles["navbar-item"]} has-dropdown is-hoverable`}>
@@ -40,7 +40,7 @@ const Nav = () => {
             </a>
 
             <div className="navbar-dropdown">
-              <a href="https://www.fff.com" className="navbar-item">
+              <a href="https://www.fff.com" className="navbar-item is-active">
                 Characters
               </a>
               <a href="https://www.fff.com" className="navbar-item">
